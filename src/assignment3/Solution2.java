@@ -49,9 +49,10 @@ public class Solution2 {
             // condition is met
             do{
                 //creating string array named words, it holds the line (refer above)
-                // and we are making all of it to lower case, then split the line 
-                // using the delimiter " " or space
-                String[] words = line.toLowerCase().split(" ");
+                // and we are making all of it to lower case, we are replacing except 
+                // the pattern "[^a-zA-Z0-9]" or non-alphanumeric characters with " " (space),
+                // then split the line using the delimiter " " or space
+                String[] words = line.toLowerCase().replaceAll("[^a-zA-Z0-9]"," ").split(" ");
                 // entering the for-loop, for each word in words string array
                 for(String word: words){
                     //the .length() method returns the total number of 
