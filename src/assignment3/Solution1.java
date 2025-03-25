@@ -18,7 +18,7 @@ public class Solution1 {
     
     public static void main(String[] args) {
         
-        //openging the data1.csv using the absolute path and assigning the whole information
+        //opening the data1.csv using the absolute path and assigning the whole information
         // to a singular string named fileName
         String fileName = "/home/anastasia/NetBeansProjects/Assignment3/data1.csv";
         
@@ -137,7 +137,6 @@ public class Solution1 {
                 }while(id_it.hasNext());
             }
         
-            System.out.println(fileName);
         // in the case an error occurs from the try block
         //the catch block code will be executed
         }catch(Exception IOException){
